@@ -1,10 +1,10 @@
 # Intro
 
-Ever wondered why you dont have something like this in Windows cmd.exe command prompt?
+Ever wondered why you dont have something like this in Windows cmd.exe command prompt? (While they have it on mac and linux)
 
 ![alt text](./images/power_line.png)
 
-Me sometimes until I pushed on a wrong branch then after researching in the toilet it become obvious that it is totally doable using magic command of cmd.exe ```prompt```:
+I had it in mind sometimes until I pushed on a wrong branch. After researching in the toilet it became obvious that it is totally doable using magic command ```prompt```:
 
 Here is powerline in Windows Terminal Preview running cmd.exe
 ![alt text](./images/windows_terminal_preview_powerline.png)
