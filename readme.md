@@ -4,7 +4,7 @@ Ever wondered why you dont have something like this in Windows cmd.exe command p
 
 ![alt text](./images/power_line.png)
 
-I had it in mind sometimes until I pushed on a wrong branch. After researching in the toilet it became obvious that it is totally doable using magic command ```prompt```:
+I had it in mind sometimes until I pushed on a wrong branch. After researching in the toilet it became obvious that it is totally doable using ```prompt``` the command:
 
 Here is powerline in Windows Terminal Preview running cmd.exe
 ![alt text](./images/windows_terminal_preview_powerline.png)
