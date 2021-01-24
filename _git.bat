@@ -1,3 +1,3 @@
-@echo off
-git.exe %*
-%POWERLINE_DIR%\_set.bat
+        @echo off
+        git.exe %*
+        %POWERLINE_DIR%\_set.bat

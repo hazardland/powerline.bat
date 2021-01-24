@@ -1,3 +1,3 @@
-@echo off
-cd %*
-%POWERLINE_DIR%\_set.bat
+        @echo off
+        cd %*
+        %POWERLINE_DIR%\_set.bat
