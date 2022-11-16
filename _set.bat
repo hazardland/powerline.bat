@@ -8,7 +8,7 @@
         set ELEVATED=
         net.exe session 1>NUL 2>NUL && set ELEVATED=1
 
-        chcp 65001
+        chcp 65001 1>NUL 2>NUL
         if "%ELEVATED%" == "" (
             if "%GITBRANCH%" == "" (
                 prompt $E[30;44m$S$E[0m$E[30;44m$P$S$E[0m$E[34m$E[0m$S
@@ -22,4 +22,4 @@
                 prompt $E[30;41m$S$E[0m$E[30;41m$P$S$E[0m$E[31;43m$S$E[0m$E[30;43m%GITBRANCH%$S$E[0m$E[33m$E[0m$S
             )
         )
-        chcp 850
+        chcp 850 1>NUL 2>NUL
