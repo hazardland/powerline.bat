@@ -9,10 +9,10 @@
         net.exe session 1>NUL 2>NUL && set ELEVATED=1
 
         chcp 65001 1>NUL 2>NUL
-        if "%ELEVATED%" == "" (set CLR=44) else (set CLR=41)
-        if "%GITBRANCH%" == "" (SET GIT=) else (set GIT=;43m$S$E[0m$E[30;43m%GITBRANCH%$S$E[0m$E[33m)
+        if "%ELEVATED%" == "" (set CLR=4) else (set CLR=1)
+        if "%GITBRANCH%" == "" (SET GIT=) else (set GIT=;43m$S$E[0m$E[30;43m%GITBRANCH%$S$E[0m$E[33)
 
-        prompt $E[30;%CLR%m$S$E[0m$E[30;%CLR%m$P$S$E[0m$E[31%GIT%$E[0m$S
+        prompt $E[30;4%CLR%m$S$E[0m$E[30;4%CLR%m$P$S$E[0m$E[3%CLR%%GIT%m$E[0m$S
 
         chcp 850 1>NUL 2>NUL
 
