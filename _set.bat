@@ -12,6 +12,7 @@
         if "%ELEVATED%" == "" (set CLR=44) else (set CLR=41)
         if "%GITBRANCH%" == "" (SET GIT=) else (set GIT=;43m$S$E[0m$E[30;43m%GITBRANCH%$S$E[0m$E[33m)
 
-        prompt $E[30;%CLR%m$S$E[0m$E[30;%CLR%m$P$S$E[0m$E[31m%GIT%$E[0m$S
+        prompt $E[30;%CLR%m$S$E[0m$E[30;%CLR%m$P$S$E[0m$E[31%GIT%$E[0m$S
 
         chcp 850 1>NUL 2>NUL
+
