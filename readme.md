@@ -59,7 +59,7 @@ If you still want full path, uncomment this line in ```_set.bat```
 
 (Uncommenting in batch files means removing ```@REM```)
 
-# Intro (For old version)
+# Intro (For older version)
 
 Ever wondered why you dont have something like this in Windows cmd.exe command prompt? (While they have it on mac and linux)
 
