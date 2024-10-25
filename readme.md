@@ -10,11 +10,11 @@
 
 Assuming you put repo in folder ```c:\src\powerline\init.bat``` you can setup it like that:
 
-#### Windows Terminal
+### Windows Terminal
 
 Find "Command Prompt" profile and change "Command line" setting to this: ```%SystemRoot%\System32\cmd.exe /k "c:\src\powerline\init.bat"```
 
-#### VSCode
+### VSCode
 
 . Press: Ctrl + Shift + P
 . Type: Open User Settings (JSON)
@@ -45,7 +45,7 @@ Find "Command Prompt" profile and change "Command line" setting to this: ```%Sys
     ...
 }
 ```
-#### Font
+### Font
 
 "JetBrains Mono" - For the moment you can download latest version from here: https://www.jetbrains.com/lp/mono/
 
