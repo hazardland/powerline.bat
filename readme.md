@@ -1,4 +1,65 @@
-# Intro
+# Update
+
+![alt text](./images/powerline_v2.png)
+
+* Removed full path
+* Improved speed for elevated mode detection and git branch
+* Migrated to font "JetBrains Mono" 
+* Changed folder background color to cyan
+
+
+Assuming you put repo in folder ```c:\src\powerline\init.bat``` you can setup it like that:
+
+#### Windows Terminal
+
+Find "Command Prompt" profile and change "Command line" setting to this: ```%SystemRoot%\System32\cmd.exe /k "c:\src\powerline\init.bat"```
+
+#### VSCode
+
+. Press: Ctrl + Shift + P
+. Type: Open User Settings (JSON)
+. Add following lines:
+
+```json
+{
+    ...
+    // Only this settings matters in fact
+    "terminal.integrated.profiles.windows": {
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [
+                "/K",
+                "C:\\src\\powerline\\init.bat"        
+            ],
+        },
+    },
+    // But here are some bonus settings
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.enablePersistentSessions": false,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.gpuAcceleration": "on",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    ...
+}
+```
+#### Font
+
+"JetBrains Mono" - For the moment you can download latest version from here: https://www.jetbrains.com/lp/mono/
+
+### Notes
+
+If you still want full path, uncomment this line in ```_set.bat```
+
+```batch
+        @REM set "PARENT_FOLDER=%CD%"
+```
+
+(Uncommenting in batch files means removing ```@REM```)
+
+# Intro (For old version)
 
 Ever wondered why you dont have something like this in Windows cmd.exe command prompt? (While they have it on mac and linux)
 
